@@ -17,7 +17,7 @@
 
 <br>
 
-![이미지](https://velog.velcdn.com/images/as979200/post/0723443f-2dfb-4b4d-9645-6c77547967be/image.png)
+![이미지](https://velog.velcdn.com/images/as979200/post/27c8d7ea-d9b9-4015-a505-4870abbd14c1/image.png)
 
 <br><br>
 
@@ -39,7 +39,7 @@
   
 <br>
 
-![이미지](https://velog.velcdn.com/images/as979200/post/251c9e6d-5ff0-4c6f-ab35-73523ce7186a/image.png)
+![이미지](https://velog.velcdn.com/images/as979200/post/38d94319-ec69-4ba7-846b-dae9d46211d6/image.png)
 
 <br><br>
 
@@ -74,7 +74,7 @@
 
 <br>
 
-![이미지](https://velog.velcdn.com/images/as979200/post/0713c18e-abd4-4344-ad68-e766fd2f933b/image.png)
+![이미지](https://velog.velcdn.com/images/as979200/post/d1a3762d-88e1-4c46-85cc-a691ce0ee0e7/image.png)
 
 <br><br><br>
 
