@@ -13,9 +13,9 @@
 
 ## SQL 표준
 > ### **ANSI/ISO SQL 표준** 
-> ### INNER JOIN, NATURAL JOIN, USING 조건 ON 조건절을 사용한다.
+>  INNER JOIN, NATURAL JOIN, USING 조건 ON 조건절을 사용한다.
 > ### **ANSI/ISO SQL3 표준**
-> ### DBMS 벤더별로 차이가 있었던, SQL을 표준화하여 제정한다.
+>  DBMS 벤더별로 차이가 있었던, SQL을 표준화하여 제정한다.
 
 <br><br><br>
 
@@ -82,7 +82,7 @@
 
 
 >### **옵티마이저란**?
->### 옵티마이저는 가장 효율적인 방법으로 SQL을 실행할 최적의 처리 경로를 생성해주는 DBMS의 핵심 엔진이다.
+> 옵티마이저는 가장 효율적인 방법으로 SQL을 실행할 최적의 처리 경로를 생성해주는 DBMS의 핵심 엔진이다.
 
 <br>
 
