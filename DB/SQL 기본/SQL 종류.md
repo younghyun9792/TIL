@@ -23,7 +23,7 @@
 
 <br>
 
-* ### **DDL(Data Definition Language), 데이터 정의어**
+* ### [**DDL(Data Definition Language), 데이터 정의어**](DDL.md)
   관계형 데이터베이스의 구조를 정의하는 언어로, Create, Alter, Drop 문 등이 있다.  
   <br>
 * ### **DML(Data Manipulation Language), 데이터 조작어**
@@ -47,7 +47,7 @@
 
 <br>
 
-## **트랜잭션의 특성**
+## **트랜잭션의 특성(ACID)**
   <br>
 
 * ### 원자성(Atomicity)
