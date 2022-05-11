@@ -26,7 +26,7 @@
 * ### [**DDL(Data Definition Language), 데이터 정의어**](DDL.md)
   관계형 데이터베이스의 구조를 정의하는 언어로, Create, Alter, Drop 문 등이 있다.  
   <br>
-* ### **DML(Data Manipulation Language), 데이터 조작어**
+* ### [**DML(Data Manipulation Language), 데이터 조작어**](DML.md)
   테이블에서 데이터를 입력, 수정, 삭제, 조회 등을 하며 Insert, Update, Delete, Select 문 등이 있다.  
   <br>
 * ### **DCL(Data Control Language), 데이터 제어어**
