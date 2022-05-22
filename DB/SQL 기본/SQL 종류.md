@@ -37,7 +37,7 @@
 
   <br>
 
-* ### **TCL(Transaction Control Language), 트랜잭션 제어어**
+* ### [**TCL(Transaction Control Language), 트랜잭션 제어어**](TCL.md)
   트랜잭션을 제어하는 명령어로, Commit, Rollback 문 등이 있다.
 
 <br>
