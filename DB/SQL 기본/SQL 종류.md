@@ -29,7 +29,7 @@
 * ### [**DML(Data Manipulation Language), 데이터 조작어**](DML.md)
   테이블에서 데이터를 입력, 수정, 삭제, 조회 등을 하며 Insert, Update, Delete, Select 문 등이 있다.  
   <br>
-* ### **DCL(Data Control Language), 데이터 제어어**
+* ### [**DCL(Data Control Language), 데이터 제어어**](DCL.md)
   데이터베이스의 사용자에게 권한을 부여하거나 회수하며, Grant, Revoke 문 등이 있다.  
   <br>
 
