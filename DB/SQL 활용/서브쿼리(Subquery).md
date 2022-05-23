@@ -74,7 +74,7 @@ WHERE NUM < 5;
 
 <br>
 
-![이미지](https://velog.velcdn.com/images/as979200/post/38a5d450-7275-42d4-a49e-b57f2dfacb95/image.png)
+![이미지](https://velog.velcdn.com/images/as979200/post/65cc948f-b482-4b40-a965-4645c21c32f7/image.png)
 
 <br><br>
 
