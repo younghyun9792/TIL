@@ -28,7 +28,7 @@ FROM 테이블명;
 
 <br>
 
-![이미지](https://velog.velcdn.com/images/as979200/post/ddab69e5-8c64-429d-861d-88569b7cfa95/image.png)
+![이미지](https://velog.velcdn.com/images/as979200/post/ba4d03eb-42cd-47f9-8138-ef8df7081c6f/image.png)
 
 <br>
 
