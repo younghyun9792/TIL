@@ -10,7 +10,7 @@
   ### [1. 공격 기법](#공격-기법)
   ### [2. Blind SQL Injection](#blind-sql-injection)
   ### [3. Error Based SQL Injection](#error-based-sql-injection)
-  ### [4. Time Based SQL Injection](#error-based-sql-injection)
+  ### [4. Time Based SQL Injection](#time-based-sql-injection)
 
 <br>
 
@@ -271,3 +271,33 @@ SELECT 1=1 or 9e307*2;
 - - -
 
 <br>
+
+## **Time Based SQL Injection**
+
+<br>
+
+* ### Time Based SQL Injection은 시간 지연을 이용해 쿼리의 참/거짓 여부를 판단하는 공격 기법입니다. 시간을 지연시키는 방법으로는 DBMS에서 제공하는 함수 또는 시간이 많이 소요되는 연산을 소요하는 헤비 쿼리(Heavy query) 등이 있습니다.
+
+<br>
+
+```sql
+SELECT IF(1=1, sleep(1), 0);
+-- 1초 지연됨.
+
+SELECT IF(1=0, sleep(1), 0);
+-- 1초 지연되지 않음.
+```
+
+<br>
+
+* ### 시간을 지연시키는 방법들은 아래와 같다.
+
+<br>
+
+```sql
+SELECT SLEEP(1);
+
+SELECT BENCHMARK(40000000,SHA1(1));
+
+SELECT (SELECT count(*) FROM information_schema.tables A, information_schema.tables B, information_schema.tables C) as heavy;
+```
