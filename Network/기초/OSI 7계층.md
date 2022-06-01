@@ -2,6 +2,8 @@
 ISO에서 개발한 모델로, 프로토콜을 기능별로 나눈 것이다. 각 계층은 하위 계층의 기능만을 이용하고, 상위 계층에게 기능을 제공한다.
 기능별로 분리함으로써, 문제의 현상을 보고 어느 계층에 문제가 생겼는지 파악할 수 있다.
 
+<br>
+
 |        Level          |            Layer             |       Device      |      Protocol    |       Unit        |  
 |:---: | :---: | :---: |  :---:   |   :---:   |
 | 7    | Application Layer |  |  HTTP, DNS, FTP...   |     Message |  
@@ -11,6 +13,9 @@ ISO에서 개발한 모델로, 프로토콜을 기능별로 나눈 것이다. �
 | 3    | Network Layer            | Router |     IP, ICMP, ARP   |   Packet      |
 | 2    | DataLink Layer            | Switch, Bridge |     EThernet, PPP   |   Frame      |
 | 1    | Physical Layer            | Hub, Repeater |     RS-232, X.25 / X.21   |   Bit      |
+
+<br>
+<br>
 
 ## 1. 물리 계층(Pyscial Layer)
 통신의 가장 아래 단계로, 전송매체를 통해 실제로 데이터를 전송하는 부분이다.
