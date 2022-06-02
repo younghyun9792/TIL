@@ -2,7 +2,7 @@
 
 <br>
 
-### **HTTP(Hyper Text Transfer Protocol)** 란 [서버와 클라이언트](%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%99%80%20%EC%84%9C%EB%B2%84.md)의 데이터 교환을 요청(Request)과 응답(Response) 형식으로 정의한 프로토콜로, 현대 웹 서비스의 바탕이 된다.
+### **HTTP(Hyper Text Transfer Protocol)** 란 [클라이언트와 서버](%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%99%80%20%EC%84%9C%EB%B2%84.md)의 데이터 교환을 요청(Request)과 응답(Response) 형식으로 정의한 프로토콜로, 현대 웹 서비스의 바탕이 된다.
 
 <br>
 
