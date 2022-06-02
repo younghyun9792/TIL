@@ -15,7 +15,7 @@
 
 <br>
 
-![이미지](https://kr.object.ncloudstorage.com/dreamhack-content/page/12895a254539b5a98d3e22c6af025882215271a3231744279101323df838a1a2.png)
+![이미지](https://velog.velcdn.com/images/younghyun/post/d9ceed1a-9af8-45ea-9a09-a8c824bcbe56/image.png)
 
 <br>
 
