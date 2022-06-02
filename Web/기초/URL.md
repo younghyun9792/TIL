@@ -15,7 +15,7 @@
 
 <br>
 
-![이미지](https://velog.velcdn.com/images/younghyun/post/d9ceed1a-9af8-45ea-9a09-a8c824bcbe56/image.png)
+![](https://velog.velcdn.com/images/as979200/post/8eed0daf-8ee0-4cfc-a6e9-8187aa2d759f/image.png)
 
 <br>
 
