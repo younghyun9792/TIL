@@ -18,6 +18,10 @@
 ### 2. 출발지 IP가 공격대상 IP로 변조되었으므로, 증폭 된 패킷이 공격대상 IP로 전달된다.
 ### 결국, 공격 대상은 수많은 서버로부터 **증폭된 응답 패킷**을 받게된다.
 
+<br>
+
+![](https://velog.velcdn.com/images/younghyun/post/4a30b061-2af8-4686-969c-802bddfd853b/image.png)
+
 <br><br>
 
 - - -
