@@ -21,7 +21,7 @@
 |응용(Application)|HTTP, SMTP, FTP, Telnet...
 |표현(Presentation)|ASCII,JPEG,MIDI|
 |세션(Session)|NetBIOS,SAP,SDP,LWLink|
-|전송(Transport)|TCP,UDP,SPX|
+|전송(Transport)|[TCP](TCP.md),UDP,SPX|
 |네트워크(Network)|IP|
 |데이터링크(Data Link)|Ethernet,Token Ring|
 |물리(Physical)||
