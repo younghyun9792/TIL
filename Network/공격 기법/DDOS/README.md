@@ -26,7 +26,7 @@
 ## **애플리케이션 공격**
 해당 공격은 애플리케이션의 구조적인 취약점이나 운영체제의 보안 취약점을 악용하여 대상 서버의 자원을 소진시킨다.
 
-+ HTTP GET Flooding
++ [HTTP GET Flooding](HTTP%20GET%20Flooding.md)
 + CC Attack
 + Slowloris
 + RUDY
