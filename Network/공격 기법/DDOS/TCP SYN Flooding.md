@@ -2,7 +2,7 @@
 
 <br>
 
-### `TCP SYN Flooding`은 **TCP의 연결과정(3 Way Handshake)의 취약점**을 이용하여 공격한다.
+### `TCP SYN Flooding`은 **[TCP](./../../프로토콜/TCP.md)의 연결과정(3 Way Handshake)의 취약점**을 이용하여 공격한다.
 
 <br>
 
