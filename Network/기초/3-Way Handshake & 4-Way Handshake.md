@@ -2,22 +2,22 @@
 
 <br>
 
-### [`3-Way Handshake`](#3-way-handshake)는 [TCP](./../프로토콜/TCP.md)에서 **연결을 설정**하는 과정이다.
+### **`3-Way Handshake`** 는 [TCP](./../프로토콜/TCP.md)에서 **연결을 설정**하는 과정이다.
 <br>
 
-### [`4-Way HandShake`](#4-way-handshake)는 [TCP](./../프로토콜/TCP.md)에서 **연결을 해제**하는 과정이다.
+### **`4-Way HandShake`** 는 [TCP](./../프로토콜/TCP.md)에서 **연결을 해제**하는 과정이다.
 
 <br><br>
 
 > ## **SYN, ACK, FIN?**
-> ### SYN이나 ACK, FIN 등은 TCP 통신에서 사용하는 Control Flag로, URG, PSH, RST등이 추가로 있다.
+> ### SYN이나 ACK, FIN 등은 TCP 통신에서 사용하는 [Control Flag](TCP%20Control%20Flag.md)로, URG, PSH, RST등이 추가로 있다.
 <br><br>
 
 ## **3-Way Handshake**
 
 <br>
 
-### 3-Way Handshake는 [TCP](./../프로토콜/TCP.md) 통신을 이용하여 데이터를 전송하기 위해 네트워크 연결을 **설정(Connection Establish)**하는 과정이다.
+### 3-Way Handshake는 [TCP](./../프로토콜/TCP.md) 통신을 이용하여 데이터를 전송하기 위해 네트워크 연결을 **설정(Connection Establish)** 하는 과정이다.
 <br>
 
 ### 양쪽 모두 데이터를 전송할 준비가 되었다는 것을 보장하고, 실제로 데이터 전달을 시작하기 전에 한 쪽에서 다른 쪽이 준비되었다는 것을 알 수 있도록 한다.
@@ -70,8 +70,8 @@
 <br>
 
 > ## **Termination의 종류**
-> ### Termination에는 Graceful Connection release(정상적인 연결 해제)와 Abrupt Connection release(갑작스런 연결 해제)가 있다.
-> ### Graceful Connection release는 양쪽의 커넥션이 서로 닫기 전까지 열려 있고, Abrupt Connection release는 갑자기 한 TCP 엔티티가 연결을 강제로 닫는다.
+> ### `Termination`에는 정상적인 연결 해제인 `Graceful Connection release`와 갑작스런 연결 해제인 `Abrupt Connection release`가 있다.
+> ### `Graceful Connection release`는 양쪽의 커넥션이 서로 닫기 전까지 열려 있고, `Abrupt Connection release`는 갑자기 한 TCP 엔티티가 연결을 강제로 닫는다.
 
 <br>
 
