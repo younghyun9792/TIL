@@ -2,7 +2,7 @@
 
 
 + DoS
-+ DDoS
-+ Scanning
-+ Sniffing
-+ Spoofing
++ [DDoS](./DDoS/)
++ [Scanning](./Scanning/)
++ [Sniffing](./Sniffing/)
++ [Spoofing](./Spoofing/)
