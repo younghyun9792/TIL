@@ -2,7 +2,7 @@
 
 
 + DoS
-+ [DDoS](./DDoS/)
-+ [Scanning](./Scanning/)
-+ [Sniffing](./Sniffing/)
-+ [Spoofing](./Spoofing/)
++ [DDoS](./DDoS/README.md)
++ [Scanning](./Scanning/README.md)
++ [Sniffing](./Sniffing/README.md)
++ [Spoofing](./Spoofing/README.md)
