@@ -152,3 +152,17 @@ x/s 0x400000 -> 0x400000 주소의 문자열 출력
 
 ## **vmmap**
 ### `vmmap`은 **가상 메모리의 레이아웃**을 보여준다. 어떤 파일이 매핑된 영역일 경우 해당 파일의 경로까지 보여준다.
+
+<br><br><br>
+
+>## **GDB의 명령어 축약**
+>+ ### b : break
+>+ ### c : continue
+>+ ### r : run
+>+ ### si : step into
+>+ ### ni : next instruction
+>+ ### i : info
+>+ ### k : kill
+>+ ### pd : pdisas
+
+<br><br>
