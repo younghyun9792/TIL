@@ -25,7 +25,7 @@
 
 ### 아래의 그림처럼 각 모드를 서로 전환할 수 있다.
 
-![](https://velog.velcdn.com/images/younghyun/post/14c7593d-0468-498f-a59f-e55f188802dc/image.png)
+![](https://velog.velcdn.com/images/younghyun/post/20e8ab67-7751-4cd6-aa85-355ec68ba198/image.png)
 
 <br><br>
 
