@@ -28,8 +28,6 @@
 
 + [HTTP GET Flooding](HTTP%20GET%20Flooding.md)
 + CC Attack
-+ Slowloris
-+ RUDY
 + DNS Query Flooding
 + DNS Amplication DDoS
 + Mail Bomb
