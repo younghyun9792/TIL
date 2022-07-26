@@ -75,7 +75,7 @@ s32 = 0x41424344
 s64 = 0x4142434445464748
 
 print(p32(s32)) # b'DCBA'
-print(s64(s64)) # b'HGFEDCBA'
+print(p64(s64)) # b'HGFEDCBA'
 
 s32 = "ABCD"
 s64 = "ABCDEFGH"
