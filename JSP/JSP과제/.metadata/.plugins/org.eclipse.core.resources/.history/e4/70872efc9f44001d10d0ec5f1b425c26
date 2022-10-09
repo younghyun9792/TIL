@@ -1,0 +1,14 @@
+function order(){
+	if(document.order_frm.custno.value.length == 0){
+		alert("고객번호가 입력되지 않았습니다")	
+	}
+	else if(document.order_frm.custname.value.length == 0){
+		alert("고객이름이 입력되지 않았습니다")	
+	}
+	else if(document.order_frm.menu.value.length == 0){
+		alert("주문 메뉴 입력되지 않았습니다")	
+	}
+	else if(document.order_frm.custdate.value.length == 0){
+		alert("주문날짜가 입력되지 않았습니다.")	
+	}
+}

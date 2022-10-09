@@ -1,0 +1,7 @@
+function chk_register(){
+	alert(1);
+	if(document.register_frm.register_month.value.length == 0){
+		alert("수강월을 입력하지 않았습니다.");
+	}
+	alert(document.register_frm.register_month.value.length)
+}

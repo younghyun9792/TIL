@@ -1,0 +1,87 @@
+
+10월 08, 2022 13:17:46.429 NEW SESSION
+10월 08, 2022 13:17:46.429 [2904:10976:1008/131746.423:ERROR:device_event_log_impl.cc(214)] [13:17:46.423] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 08, 2022 13:17:46.479 [2904:13212:1008/131746.479:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:17:46.490 [2904:13212:1008/131746.479:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:17:46.498 [2904:13212:1008/131746.480:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:17:46.506 [2904:13212:1008/131746.480:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:17:46.512 [2904:13212:1008/131746.480:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:18:09.515 [2904:13212:1008/131809.514:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:18:12.97 [2904:13212:1008/131812.096:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:18:14.261 [2904:13212:1008/131814.261:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:18:14.322 [2904:13212:1008/131814.322:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:18:14.888 [2904:13212:1008/131814.888:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:18:55.144 [2904:13212:1008/131855.144:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:18:55.207 [2904:13212:1008/131855.207:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:18:59.472 [2904:13212:1008/131859.471:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:19:01.872 [2904:13212:1008/131901.871:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:19:07.885 [2904:13212:1008/131907.885:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:20:16.569 [2904:13212:1008/132016.569:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:20:21.153 [2904:13212:1008/132021.153:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:20:31.190 [2904:13212:1008/132031.190:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:20:43.242 [2904:13212:1008/132043.241:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:20:55.238 [2904:13212:1008/132055.237:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:23:22.385 [2904:13212:1008/132322.385:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:23:39.159 [2904:13212:1008/132339.159:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:23:51.905 [2904:13212:1008/132351.905:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:24:15.870 [2904:13212:1008/132415.869:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:24:20.414 [2904:13212:1008/132420.414:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:29:53.413 [2904:13212:1008/132953.412:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:30:53.363 [2904:13212:1008/133053.362:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:31:09.886 [2904:13212:1008/133109.885:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:31:34.441 [2904:13212:1008/133134.440:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:31:34.450 [2904:10976:1008/133134.441:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+10월 08, 2022 13:31:40.685 [2904:13212:1008/133140.684:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:36:28.857 [2904:13212:1008/133628.856:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:36:55.52 [2904:13212:1008/133655.052:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:37:52.227 [2904:13212:1008/133752.227:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:39:27.12 [2904:13212:1008/133927.011:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:39:53.417 [2904:13212:1008/133953.416:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:43:26.445 [2904:13212:1008/134326.444:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:49:53.429 [2904:13212:1008/134953.429:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:50:17.768 [2904:13212:1008/135017.767:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 13:50:17.780 [2904:10976:1008/135017.767:ERROR:sharing_service.cc(210)] Device registration failed with transient error
+10월 08, 2022 13:59:55.986 [2904:13212:1008/135955.985:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 13:59:55.993 [2904:13212:1008/135955.986:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 14:00:22.716 [2904:13212:1008/140022.715:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 14:01:08.750 [2904:13212:1008/140108.750:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:01:09.318 [2904:13212:1008/140109.317:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+10월 08, 2022 14:01:11.870 [2904:13212:1008/140111.869:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:01:14.438 [2904:13212:1008/140114.438:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+10월 08, 2022 14:07:26.69 [2904:13212:1008/140726.069:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:09:52.26 [2904:13212:1008/140952.026:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:10:35.56 [2904:13212:1008/141035.055:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:20:53.935 [2904:13212:1008/142053.934:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:28:04.112 [2904:13212:1008/142804.111:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:28:26.401 [2904:13212:1008/142826.400:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:29:07.592 [2904:13212:1008/142907.592:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:30:44.844 [2904:13212:1008/143044.843:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:33:27.67 [2904:13212:1008/143327.067:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:38:59.840 [2904:13212:1008/143859.840:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:48:59.847 [2904:13212:1008/144859.846:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 14:58:59.857 [2904:13212:1008/145859.856:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:11:04.403 [2904:13212:1008/151104.402:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:13:07.800 [2904:13212:1008/151307.799:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:19:53.657 [2904:13212:1008/151953.656:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:20:23.528 [2904:13212:1008/152023.527:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:21:10.455 [2904:13212:1008/152110.455:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:22:56.188 [2904:13212:1008/152256.187:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:26:13.394 [2904:13212:1008/152613.393:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:33:36.871 [2904:13212:1008/153336.870:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:43:36.883 [2904:13212:1008/154336.882:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:56:27.455 [2904:13212:1008/155627.453:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:56:54.365 [2904:13212:1008/155654.364:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 15:57:49.942 [2904:13212:1008/155749.941:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:00:37.715 [2904:10976:1008/160037.714:ERROR:CONSOLE(1)] "Ignoring unauthorized client request from null", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+10월 08, 2022 16:10:40.432 [2904:10976:1008/161040.432:ERROR:CONSOLE(1)] "Ignoring unauthorized client request from null", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+10월 08, 2022 16:11:46.131 [2904:13212:1008/161146.131:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:12:06.487 [2904:13212:1008/161206.486:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:12:47.225 [2904:13212:1008/161247.224:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:14:14.699 [2904:13212:1008/161414.699:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:17:51.733 [2904:13212:1008/161751.732:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:23:14.363 [2904:13212:1008/162314.362:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:33:14.380 [2904:13212:1008/163314.379:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:43:14.384 [2904:13212:1008/164314.383:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 16:53:14.402 [2904:13212:1008/165314.401:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 17:03:14.407 [2904:13212:1008/170314.406:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+10월 08, 2022 17:13:14.413 [2904:13212:1008/171314.412:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106

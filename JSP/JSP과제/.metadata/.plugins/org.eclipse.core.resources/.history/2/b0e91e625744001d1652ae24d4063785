@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="header.jsp"></jsp:include>
+	
+	<section style="position:fixed; width:100%; height:100%; top:70px; background-color:gray; left:0'">
+	
+		<h2>카페 매출 조회 프로그램</h2>
+		
+		<form name="ftbl">
+			<table border="1">
+				<tr>
+					<td>메뉴번호</td>
+					<td>메뉴이름</td>
+					<td>주문량</td>
+					<td>합계</td>
+				</tr>
+				
+				
+				
+			</table>
+		</form>
+	
+	</section>
+	
+	<jsp:include page="footer.jsp"></jsp:include>
+</body>
+</html>

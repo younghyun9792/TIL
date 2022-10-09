@@ -1,0 +1,9 @@
+function chk_register(){
+	
+	alert(1)
+	
+	if(document.register_frm.custno.value==0){
+		alert("회원성명이 입력되지 않았습니다.");
+	}
+	
+}

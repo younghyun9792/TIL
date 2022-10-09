@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@include file = "dbCon.jsp"%>
+<%@page import="java.lang.*"%>
+
+
+<%
+	request.setCharacterEncoding("UTF-8");
+	PreparedStatement pstmt = null;
+	String mode = request.getParameter("mode");
+	
+	String order_no = request.getParameter("order_no");
+	String custno = request.getParameter("custno");
+	String custname = request.getParameter("custname");
+	String menu = request.getParameter("menu");
+	String amount = request.getParameter("amount");
+	String custdate = request.getParameter("custdate");
+
+	%>
+	<%=mode %>
+	<%
+	
+	
+%>

@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+</head>
+<body>
+	<jsp:include page="header.jsp"></jsp:include>
+	
+	<section style="position:fixed; top:135px; width:100%; height:100%; left:0; background: gray;">
+		<h3 style="text-align:center"><b>수강신청</b></h3>
+	
+	
+	<form name="register_frm" style="display:flex; align-items:center; justify-content:center; text-align:center">
+	<table border="1">
+		<tr>
+			<td>수강월</td>
+			<td><input type="text" name="regist_month"> <p style="font-size : 9px;">2022년2월2얼 예)20220202</p></td>
+		</tr>
+		
+	</table>
+	</form>
+	
+	</section>
+	
+	<jsp:include page="footer.jsp"></jsp:include>
+</body>
+</html>

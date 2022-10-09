@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="DBPKG.Util"%>
+
+<%
+try{
+	request.setCharacterEncoding("UTF-8");
+	String mode = request.getParameter("mode");
+	%>
+	<%=mode %>
+	<%
+	if(mode.equals("register")){
+		String regist_month = request.getParameter("regist_month");
+		String c_name = request.getParameter("c_name");
+		String c_no = request.getParameter("c_no");
+		String class_area = request.getParameter("class_area");
+		String class_name = request.getParameter("class_name");
+		String class_price = request.getParameter("class_price");
+		%>
+		<%=regist_month %>
+		<%=c_name %>
+		<%=c_no %>
+		<%=class_area %>
+		<%=class_name %>
+		<%=class_price %>
+		<%
+	}
+}
+catch(Exception e){
+	e.printStackTrace();
+}
+%>

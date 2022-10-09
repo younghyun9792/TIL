@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="DBPKG.Util"%>
+
+<%
+try{
+	request.setCharacterEncoding("UTF-8");
+	String mode = request.getParameter("mode");
+	%>
+	<%=mode %>
+	<%
+	if(mode.equals("register")){
+		String regist_month = request.getParameter("regist_month");
+	}
+}
+catch(Exception e){
+	e.printStackTrace();
+}
+%>

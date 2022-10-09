@@ -1,0 +1,82 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@include file="dbCon.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="header.jsp" ></jsp:include>
+	
+	<section style="position:fixed; width:100%; height:100%; top:70px; background-color:gray; left:0'">
+	
+	<h2 style="display:fixed; text-align:center;">카페 메뉴 주문하기 </h2>
+		
+		<form name="order_frm" style="display:flex; align-items:center; justify-content:center; text-align:center;">
+		<table border="1">
+			<tr>
+				<td>주문번호</td>
+				
+				<%
+					request.setCharacterEncoding("UTF-8");
+					String sql = "select max(orderno) from order_tbl";
+					PreparedStatement pstmt = null;
+					
+					try{
+						pstmt = conn.prepareStatement(sql);
+						ResultSet rs = pstmt.executeQuery();
+						rs.next()
+						String max_custno = rs.getString(1);
+					}
+					catch(Exception e){
+						e.printStackTrace();
+					}
+				%>
+				
+				<td><input type="text" value="<%=max_custno%>"></td>
+			</tr>
+			<tr>
+				<td>고객번호</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>고객이름</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>메뉴번호</td>
+				<td><input type="radio">아메리카노 <input type="radio">카페 라떼 <input type="radio">카페 모카 <input type="radio">돌체 라떼 <input type="radio">콜드 브루</td>
+			</tr>
+			<tr>
+				<td>수량</td>
+				<td><select>
+					<option>1개(추가 주문 시 선택)</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>주문일자</td>
+				<td><input type="text" placeholder="예)20220106"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button value="order" onclick="order()">주문하기</button>&nbsp;&nbsp;&nbsp;<button value="reset" onclick="reset()">다시하기</button></td>
+			</tr>
+			
+		</table>
+		</form>
+	
+	</section>
+	
+	<jsp:include page="footer.jsp"></jsp:include>
+</body>
+</html>

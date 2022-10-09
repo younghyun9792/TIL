@@ -1,0 +1,1 @@
+alert(document.register_frm.regist_month.value);

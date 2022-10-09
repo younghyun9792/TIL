@@ -1,0 +1,10 @@
+function chk_register(){
+	
+	
+	if(document.register_frm.custname.value.length==0){
+		alert("회원성명이 입력되지 않았습니다.");
+		register_frm.custname.focus();
+		return false;
+	}
+	
+}
