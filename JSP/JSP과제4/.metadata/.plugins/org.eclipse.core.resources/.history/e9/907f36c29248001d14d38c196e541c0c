@@ -1,0 +1,70 @@
+<%@page import="java.sql.*"%>
+<%@page import="DBPKG.Util"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<jsp:include page="header.jsp"></jsp:include>
+	
+	<section style="position:fixed; top:95px; left:0; background:gray; width:100%; height:100%; padding-left:15px">
+	
+		<h2 style="text-align:center">투표검수조회</h2>
+		
+		<form style="display:flex; align-items:center; justify-content:center; text-align:center">
+			<table border="1">
+				<tr>
+					<td>성명</td>
+					<td>생년월일</td>
+					<td>나이</td>
+					<td>성별</td>
+					<td>후보번호</td>
+					<td>투표시간</td>
+					<td>유권자확인</td>
+				</tr>
+				
+				<%
+				
+					Connection conn = null;
+					PreparedStatement pstmt = null;
+					
+					try{
+						conn = Util.getConnection();
+						String sql = "select * from tbl_vote_202005 where V_AREA = '제1투표장'";
+						pstmt = conn.prepareStatement(sql);
+						ResultSet rs = pstmt.executeQuery();
+						while(rs.next()){
+							
+					
+				%>
+				
+					<tr>
+						<td><%=rs.getString(1) %></td>
+						<td><%=rs.getString(2) %></td>
+						<td><%=rs.getString(3) %></td>
+						<td><%if(rs.getString(4).equals("1")) out.println("고졸");else if(rs.getString(4).equals("2")) out.println("학사"); else if(rs.getString(4).equals("3")) out.println("석사");else if(rs.getString(4).equals("4")) out.println("박사");%></td>
+						<td><%=rs.getString(5).substring(0,6)+"-"+rs.getString(5).substring(6,13) %></td>
+						<td><%=rs.getString(6) %></td>
+						<td><%=rs.getString(7)%>-<%=rs.getString(8)%>-<%=rs.getString(9) %></td>
+					</tr>
+				
+				<%
+						}
+					}
+					catch(Exception e){
+						e.printStackTrace();
+					}
+				%>
+			</table>
+		</form>
+		
+		
+	</section>
+	
+	<jsp:include page="footer.jsp"></jsp:include>
+</body>
+</html>

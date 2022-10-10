@@ -1,0 +1,4 @@
+function chk_vote(){
+	alert(1);
+	
+}

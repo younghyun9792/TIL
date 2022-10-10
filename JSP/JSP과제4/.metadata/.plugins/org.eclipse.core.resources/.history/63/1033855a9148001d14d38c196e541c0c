@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<%@page import="DBPKG.Util"%>
+<%
+	request.setCharacterEncoding("UTF-8");
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	String mode = request.getParameter("mode");
+	%>
+	<%=mode %>
+	<%
+	try{
+		if(mode.equals("vote")){
+			String V_NUMIN = request.getParameter("V_JUMIN");
+			String V_NAME = request.getParameter("V_NAME");
+			String M_NO = request.getParameter("M_NO");
+			String V_TIME = request.getParameter("V_TIME");
+			String V_AREA = request.getParameter("V_AREA");
+			String V_CONFIRM = request.getParameter("V_CONFIRM");
+			conn = Util.getConnection();
+			String sql = "insert into tbl_vote_202005 values (?,?,?,?,?,?)";
+			pstmt = conn.prepareStatement(sql);	
+		}
+		
+	}
+	catch(Exception e){
+		e.printStackTrace();
+	}
+%>

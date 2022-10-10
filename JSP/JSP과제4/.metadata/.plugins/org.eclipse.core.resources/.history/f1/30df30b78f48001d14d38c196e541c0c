@@ -1,0 +1,12 @@
+function chk_vote(){
+	if(document.vote_frm.V_JUMIN.value.length == 0){
+		alert("주민번호가 입력되지 않았습니다!");
+		vote_frm.V_JUMIN.focus();
+		return false;
+	}
+	else if(document.vote_frm.V_NAME.value.length == 0){
+		alert("성명이 입력되지 않았습니다!");
+		vote_frm.V_NAME.focus();
+		return false;
+	}
+}
