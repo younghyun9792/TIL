@@ -1,0 +1,6 @@
+function chk_borrow(){
+	alert(1);
+	if(document.borrow_frm.bor_no.value.length>=0){
+		alert("입력완료");
+	}
+}

@@ -1,0 +1,49 @@
+<%@page import="java.sql.*"%>
+<%@page import="DBPKG.Util"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<jsp:include page="header.jsp"></jsp:include>
+	
+	<section style="position:fixed; width:100%; height:100%; top:70px; left:0; background:beige; text-align:center">
+		<h3>도서 대여 페이지</h3>
+		<form style="display:flex; align-items:center; justify-content:center; text-align:center">
+			<table border="1">
+			
+			<% 
+				request.setCharacterEncoding("UTF-8");
+				Connection conn = null;
+				PreparedStatement pstmt = null;
+				try{
+					conn = Util.getConnection();
+					String sql = "select max(bor_no) + 1 from borrow_tbl";
+					pstmt = conn.prepareStatement(sql);
+					ResultSet rs = pstmt.executeQuery();
+					rs.next();
+			%>
+			
+			<tr>
+				<td>대여번호</td>
+				<td><input type="text" value="<%=rs.getString(1)%>"></td>
+			</tr>
+			
+			<%
+				}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			%>
+			
+			</table>
+		</form>
+	</section>
+	
+	<jsp:include page="footer.jsp"></jsp:include>
+</body>
+</html>

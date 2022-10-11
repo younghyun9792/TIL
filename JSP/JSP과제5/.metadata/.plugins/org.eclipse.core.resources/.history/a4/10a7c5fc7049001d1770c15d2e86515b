@@ -1,0 +1,3 @@
+function chk_borrow(){
+	alert(1);
+}

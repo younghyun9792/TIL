@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<%@page import="DBPKG.Util"%>
+<%
+	request.setCharacterEncoding("UTF-8");
+	String mode = request.getParameter("mode");
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	conn = Util.getConnection();
+	if(mode.equals("borrow")){
+		String bor_no = request.getParameter("bor_no");
+		String m_no = request.getParameter("m_no");
+		String m_name = request.getParameter("m_name");
+		String bookno = request.getParameter("bookno");
+		String bookname = request.getParameter("bookname");
+		String bor_date = request.getParameter("bor_date");
+		String re_book = "대여";
+		String sql = "insert into borrow_tbl values(?,?,?,?,?,?,?)";
+		pstmt = conn.prepareStatement(sql);
+		%>
+		<%=mode %>
+		<%=bor_no %>
+		<%=m_no %>
+		<%=m_name %>
+		<%=bookno %>
+		<%=bookname %>
+		<%=bor_date %>
+		<%=re_book %>
+		<%
+	}
+%>

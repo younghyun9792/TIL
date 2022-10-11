@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GSM_2203/src/main/webapp/hedaer.jsp&apos; to &apos;header.jsp&apos;" description="Rename resource &apos;hedaer.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/hedaer.jsp" name="header.jsp" stamp="1665490524506" updateReferences="true"/>
+</session>
