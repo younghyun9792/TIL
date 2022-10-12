@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HRD_2203/src/main/webapp/check.jsp&apos; to &apos;check.js&apos;" description="Rename resource &apos;check.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/check.jsp" name="check.js" stamp="1665572476272" updateReferences="true"/>
+</session>

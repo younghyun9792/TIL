@@ -1,0 +1,3 @@
+function chk_insert(){
+	alert(1);
+}

@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<jsp:include page="header.jsp"></jsp:include>
+	<section style="position:fixed; top:80px; left:0; width:100%; height:100%; background:beige">
+		<h3 style="text-align:center; margin-left:20px">성적조회목록</h3>
+		<form style="display:flex; align-items:center; justify-content:center; align-text:center">
+			<table border="1">
+				<tr>
+					<td>학년</td>
+					<td>반</td>
+					<td>번호</td>
+					<td>성명</td>
+					<td>국어</td>
+					<td>영어</td>
+					<td>수학</td>
+					<td>역사</td>
+					<td>총점</td>
+					<td>평균</td>
+				</tr>
+				
+				<%Connection conn = null;
+				PreparedStatement pstmt = null;
+				request.setCharacterEncoding("UTF-8");
+				try{
+					Class.forName("oracle.jdbc.OracleDriver");
+					conn = DriverManager.getConnection
+							("jdbc:oracle:thin:@//localhost:1521/xe", "system", "1234");
+					String sql = "insert into examtbl values(?,?,?,?,?,?)";
+					pstmt = conn.prepareStatement(sql);
+					pstmt.setString(1,request.getParameter("sNo"));
+					pstmt.setString(2,request.getParameter("sName"));
+					pstmt.setString(3,request.getParameter("kor"));
+					pstmt.setString(4,request.getParameter("eng"));
+					pstmt.setString(5,request.getParameter("math"));
+					pstmt.setString(6,request.getParameter("hist"));
+					
+					pstmt.executeUpdate();
+					
+					%>
+					<jsp:forward page="index.jsp"></jsp:forward>
+					<%
+				}
+				catch(Exception e){
+					e.printStackTrace();
+				} %>
+				
+			</table>
+		</form>
+	</section>
+	<jsp:include page="footer.jsp"></jsp:include>
+</body>
+</html>

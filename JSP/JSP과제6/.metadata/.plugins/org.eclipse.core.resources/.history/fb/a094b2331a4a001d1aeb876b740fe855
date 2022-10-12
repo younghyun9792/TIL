@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<header style="position:fixed; width:100%; height:50px; line-height:50px; left:0; top:0; background:darkgray; text-align:center; font-size:18px; color:white">(과정형평가 정보처리기능사)성적조회 프로그램ver1.0</header>
+</body>
+</html>

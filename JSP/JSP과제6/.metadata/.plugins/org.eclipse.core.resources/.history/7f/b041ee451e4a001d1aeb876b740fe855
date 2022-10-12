@@ -1,0 +1,19 @@
+<%@page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	request.setCharacterEncoding("UTF-8");
+	try{
+		Class.forName("oracle.jdbc.OracleDrive");
+		conn = DriverManager.getConnection
+				("jdbc:oracle:thin@//localhost:1521/xe", "system", "1234");
+		String sql = "insert into examtbl values(?,?,?,?,?,?)";
+		pstmt = conn.preparedStatement(sql);
+	}
+	catch(Exception e){
+		e.printStackTrace();
+	}
+%>
