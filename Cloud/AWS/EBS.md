@@ -19,6 +19,6 @@
 
 <br>
 
-![](https://velog.velcdn.com/images/younghyun/post/f24f0f7f-6b36-451d-b231-b50a1ce7edc8/image.png)
+![](https://velog.velcdn.com/images/younghyun/post/afbdde58-c774-4d4c-86a8-874485abd029/image.png)
 
 <br><br>
