@@ -41,11 +41,11 @@
 + Amazon Aurora
 
 
-+ Amazon RDS for MySQL
-+ Amazon RDS for Postgresql
-+ Amazon RDS for MariaDB
-+ Amazon RDS for Oracle
-+ Amazon RDS for SQL Server
++ ### Amazon RDS for MySQL
++ ### Amazon RDS for Postgresql
++ ### Amazon RDS for MariaDB
++ ### Amazon RDS for Oracle
++ ### Amazon RDS for SQL Server
 
 <br><br>
 
@@ -97,9 +97,9 @@
 
 + ### **Automated Backup**
 
-    RDS 생성 시 default로 설정되며, 백업 정보는 S3 버킷에 저장된다. RDS 스토리지만큼 S3 스토리지를 갖게 된다.
+    RDS 생성 시 default로 설정되며, 백업 정보는 S3 버킷에 저장된다. **RDS 스토리지만큼 S3 스토리지를 갖게 된다.**
 
-    Retention Period(1~35일) 안의 어떤 시간으로 돌아가게 할 수 있다. 또한, `Automated Backup`기간 동안, 약간의 I/O suspension이 생길 수 있다.(지연시간)
+    Retention Period(1~35일) 안의 어떤 시간으로 돌아가게 할 수 있다. 또한, `Automated Backup`기간 동안, 약간의 `I/O suspension`이 생길 수 있다.(지연시간)
 
 <br>
 
@@ -159,7 +159,7 @@
 
 + #### **목적**
 
-    `Multi-AZ`의 목적은 높은 가용성, `Multi-Region`의 목적은 DR(Digaster Recovery), 로컬 퍼포먼스(각 나라의 퍼포먼스), `Read Replica`의 목적은 성능이다.
+    `Multi-AZ`의 목적은 높은 가용성, `Multi-Region`의 목적은 DR(Digaster Recovery)과 로컬 퍼포먼스(각 나라의 퍼포먼스), `Read Replica`의 목적은 성능이다.
 
 <br>
 
@@ -189,7 +189,7 @@
 
 + #### **FailOver**
 
-    `Multi-AZ`는 자동으로 Standby로 Failober하고, `Multi-Region`와 `Read Replica`은 수동으로 Failover한다.
+    `Multi-AZ`는 자동으로 Standby로 Failover하고, `Multi-Region`와 `Read Replica`은 수동으로 Failover한다.
 
 <br>
 
