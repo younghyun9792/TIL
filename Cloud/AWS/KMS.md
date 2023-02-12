@@ -27,7 +27,7 @@
 
 + ### **Custom Key Stores**
 
-   AWS에서 제공하는 또 다른 key 관리형 서비스인 CloudHSM을 활용해 KMS가 아닌 CloudHSM에 Key를 저장하여 사용하는 방식으로, `CloudHSM` 클러스터가 생성되어 있어야 사용 가능하다.
+   AWS에서 제공하는 또 다른 key 관리형 서비스인 [CloudHSM](./CloudHSM.md)을 활용해 KMS가 아닌 CloudHSM에 Key를 저장하여 사용하는 방식으로, `CloudHSM` 클러스터가 생성되어 있어야 사용 가능하다.
 
 
 
