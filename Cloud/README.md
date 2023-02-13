@@ -5,6 +5,8 @@ Cloud에 대해 공부 한 걸 정리하는 곳입니다.
 ### AWS
 + [AMI](./AWS/AMI.md)
 + [Audit Manager](AWS/Audit%20Manager.md)
++ [AWS Config](AWS/AWS%20Config.md)
++ [AWS Organizations](./AWS/AWS%20Organizations.md)
 + [CloudHSM](AWS/CloudHSM.md)
 + [CloudTrail](./AWS/CloudTrail.md)
 + [CloudWatch](./AWS/CloudWatch.md)
