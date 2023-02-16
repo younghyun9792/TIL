@@ -14,6 +14,7 @@ Cloud에 대해 공부 한 걸 정리하는 곳입니다.
 + [EC2](./AWS/EC2.md)
 + [Health Dashboard](./AWS/Health%20Dashboard.md)
 + [IAM](./AWS/IAM.md)
++ [Inspector](./AWS/Inspector.md)
 + [KMS](./AWS/KMS.md)
 + [RDS](./AWS/RDS.md)
 + [S3](./AWS/S3.md)
