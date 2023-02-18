@@ -13,6 +13,7 @@ Cloud에 대해 공부 한 걸 정리하는 곳입니다.
 + [CloudWatch](./AWS/CloudWatch.md)
 + [EBS](./AWS/EBS.md)
 + [EC2](./AWS/EC2.md)
++ [Firewall Manager](AWS/Firewall%20Manager.md)
 + [Health Dashboard](./AWS/Health%20Dashboard.md)
 + [IAM](./AWS/IAM.md)
 + [Inspector](./AWS/Inspector.md)
