@@ -20,6 +20,7 @@ Cloud에 대해 공부 한 걸 정리하는 곳입니다.
 + [KMS](./AWS/KMS.md)
 + [Network Firewall](./AWS/Network%20Firewall.md)
 + [RDS](./AWS/RDS.md)
++ [Route 53](./AWS/Route%2053.md)
 + [S3](./AWS/S3.md)
 + [Shield](./AWS/Shield.md)
 + [System Manager](./AWS/System%20Manager.md)
