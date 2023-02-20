@@ -16,7 +16,7 @@
 
 + ### 보안 문제의 통합된 보기
 
-    `Security Hub`는 `Guard Duty`의 침임 탑지 분석  결과, [Inspector](Inspector.md)의 취약점 스캔 결과나 [Macie](Macie.md)의 S3 버킷 정책 분석 결과 등을 수집하고 통합하여 보여준다.
+    `Security Hub`는 [Guard Duty](Guard%20Duty.md)의 침임 탑지 분석  결과, [Inspector](Inspector.md)의 취약점 스캔 결과나 [Macie](Macie.md)의 S3 버킷 정책 분석 결과 등을 수집하고 통합하여 보여준다.
 
 <br>
 

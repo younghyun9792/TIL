@@ -11,6 +11,7 @@ Cloud에 대해 공부 한 걸 정리하는 곳입니다.
 + [CloudHSM](AWS/CloudHSM.md)
 + [CloudTrail](./AWS/CloudTrail.md)
 + [CloudWatch](./AWS/CloudWatch.md)
++ [Detective](AWS/Detective.md)
 + [EBS](./AWS/EBS.md)
 + [EC2](./AWS/EC2.md)
 + [Firewall Manager](AWS/Firewall%20Manager.md)
