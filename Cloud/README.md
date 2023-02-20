@@ -18,6 +18,7 @@ Cloud에 대해 공부 한 걸 정리하는 곳입니다.
 + [IAM](./AWS/IAM.md)
 + [Inspector](./AWS/Inspector.md)
 + [KMS](./AWS/KMS.md)
++ [Macie](AWS/Macie.md)
 + [Network Firewall](./AWS/Network%20Firewall.md)
 + [RDS](./AWS/RDS.md)
 + [Route 53](./AWS/Route%2053.md)
