@@ -27,6 +27,7 @@ Cloud에 대해 공부 한 걸 정리하는 곳입니다.
 + [Route 53](./AWS/Route%2053.md)
 + [S3](./AWS/S3.md)
 + [Security Hub](AWS/Security%20Hub.md)
++ [Service Catalog](./AWS/Service%20Catalog.md)
 + [Shield](./AWS/Shield.md)
 + [System Manager](./AWS/System%20Manager.md)
 + [Trusted Advisor](./AWS/Trusted%20Advisor.md)
