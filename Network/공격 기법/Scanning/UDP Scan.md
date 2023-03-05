@@ -9,7 +9,7 @@
 
 ### 포트가 열려있을 때
 
-![Image](./../../Image/../../Image/UDPScan-open.png)
+![Image](./../../Image/../../Image/UDPScan-Open.png)
 
 <br>
 
