@@ -16,7 +16,7 @@
 
 ### 포트가 닫혀있을 때
 
-![Image](./../../Image/../../Image/UDPScan-Closed.png)
+![Image](./../../Image/../../Image/UDPScan-closed.png)
 
 <br>
 
