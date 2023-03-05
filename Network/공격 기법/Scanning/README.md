@@ -17,7 +17,7 @@
 
 + Sweep
 + [TCP Full Open Scan](TCP%20Full%20Open%20Scan%20dcbb4b145362442fa73fa6a7ccc6cc9a.md)
-+ TCP Half-Open(SYN) SCAN
++ [TCP Half-Open(SYN) SCAN](./TCP%20Half%20Open%20Scan%208a6c3e7742f44b798f538e741bc26303.md)
 + UDP Scan
 + TCP FIN, NULL, X-MAS SCAN
 + TCP ACK SCAN
