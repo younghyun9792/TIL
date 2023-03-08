@@ -5,6 +5,8 @@
 + [Smurf Attack](./DoS/Smurf%20Attack.md)
 + [Ping of Death](./DoS/Ping%20of%20Death.md)
 + [Land Attack](./DoS/Land%20Attack.md)
++ [Tear Drop](./DoS/Tear%20Drop.md)
++ [Bonk Attack](DoS/Bonk%20Attack.md)
 
 
 ### DDoS
