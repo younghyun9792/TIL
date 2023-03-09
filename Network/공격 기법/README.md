@@ -10,6 +10,7 @@
 + [Boink Attack](DoS/Boink%20Attack.md)
 + [Hash DoS](DoS/Hash%20DoS.md)
 + [Hulk DoS](./DoS/Hulk%20DoS.md)
++ [Slowloris](DoS/Slowloris%20Attack.md)
 
 ### DDoS
 + [DRDoS](DDOS/DRDoS.md)
