@@ -8,6 +8,7 @@
 + [Tear Drop](./DoS/Tear%20Drop.md)
 + [Bonk Attack](DoS/Bonk%20Attack.md)
 + [Boink Attack](DoS/Boink%20Attack.md)
++ [Hash DoS](DoS/Hash%20DoS.md)
 
 
 ### DDoS
