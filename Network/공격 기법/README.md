@@ -17,7 +17,7 @@
 + [DRDoS](DDOS/DRDoS.md)
 + [HTTP GET Flooding](DDOS/HTTP%20GET%20Flooding.md)
 + [TCP SYN Flooding](./DDOS/TCP%20SYN%20Flooding.md)
-+ [Tear Drop](DoS/Tear%20Drop.md)
++ [CC Attack](./DDOS/CC%20Attack.md)
 
 
 ### Scanning
