@@ -4,7 +4,7 @@
 
 <br>
 
-###  네트워크 트래픽을 `도청(esvesdropping)`하는 과정을 의미하며, 스니핑을 할 수 있는 도구를 `스니퍼(sniffer)`라고 한다.
+###  네트워크 트래픽을 `도청(eavesdropping)`하는 과정을 의미하며, 스니핑을 할 수 있는 도구를 `스니퍼(sniffer)`라고 한다.
 
 <br>
 <br>
@@ -15,7 +15,7 @@
 
 ## **스니핑의 종류**
 
-+ Switch Jamming Attack
++ [Switch Jamming Attack](Switch%20Jamming.md)
 + SPAN Port mirroring
 + ARP Redirect
 + ICMP REdirect
