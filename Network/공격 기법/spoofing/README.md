@@ -15,8 +15,8 @@
 
 ## **스푸핑의 종류**
 
-+ ARP Spoofing
-+ DNS Spoofing
-+ IP Spoofing
++ [ARP Spoofing](../Sniffing/ARP%20Spoofing.md)
++ [DNS Spoofing](DNS%20Spoofing.md)
++ [IP Spoofing](IP%20Spoofing.md)
 + Watchdog Spoofing
 + E-mail Spoofing

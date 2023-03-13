@@ -40,3 +40,4 @@
 
 ### Spoofing
 + [IP Spoofing](spoofing/IP%20Spoofing.md)
++ [DNS Spoofing](spoofing/DNS%20Spoofing.md)
